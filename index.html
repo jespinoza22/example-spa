@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example SPA</title>
+    <style>
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            height: 100px;
+            align-items: center;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        button {
+            width: 100px;
+            background-color: #f2f2f2;
+            border: 1px solid lightblue;
+            height: 40px;
+            cursor: pointer;
+        }
+        
+        div {
+            margin: 50px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><button onclick="router.loadRoute('')">Home</button></li>
+            <li><button onclick="router.loadRoute('contacto')">Contact</button></li>
+            <li><button onclick="router.loadRoute('about')">About Me</button></li>
+        </ul>
+    </header>
+    <div data-router>
+        <h1>Hi Student, welcome to Home!!!</h1>
+    </div>
+    <script src="./router.js"></script>
+    <script src="./routes.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
